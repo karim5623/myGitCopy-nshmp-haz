@@ -65,7 +65,6 @@ final class AsyncCalc {
 		return result;
 	}
 
-	// ththhththththththt
 	/**
 	 * Convert a List of future HazardInputs to a List of future
 	 * HazardGroundMotions.
