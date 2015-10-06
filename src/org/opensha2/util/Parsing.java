@@ -408,18 +408,6 @@ public final class Parsing {
 	}
 
 	/**
-	 * Returns a string containing the string representation of each of
-	 * {@code parts} joined with {@code delimiter}.
-	 * 
-	 * @param parts the objects to join
-	 * @param delimiter the {@link Delimiter} to join on
-	 * @see Joiner
-	 */
-	public static String join(Iterable<?> parts, Delimiter delimiter) {
-		return delimiter.joiner().join(parts);
-	}
-
-	/**
 	 * Split a {@code sequence} into string components and make them available
 	 * through a (possibly-lazy) {@code Iterator}.
 	 * 
@@ -440,6 +428,18 @@ public final class Parsing {
 	 */
 	public static List<String> splitToList(CharSequence sequence, Delimiter delimiter) {
 		return delimiter.splitter().splitToList(sequence);
+	}
+
+	/**
+	 * Returns a string containing the string representation of each of
+	 * {@code parts} joined with {@code delimiter}.
+	 * 
+	 * @param parts the objects to join
+	 * @param delimiter the {@link Delimiter} to join on
+	 * @see Joiner
+	 */
+	public static String join(Iterable<?> parts, Delimiter delimiter) {
+		return delimiter.joiner().join(parts);
 	}
 
 	/**

@@ -63,7 +63,7 @@ public class Calcs {
 		AsyncList<HazardCurveSet> curveSetCollector = AsyncList.createWithCapacity(model.size());
 
 		for (SourceSet<? extends Source> sourceSet : model) {
-
+			
 			if (sourceSet.type() == CLUSTER) {
 
 				ClusterSourceSet clusterSourceSet = (ClusterSourceSet) sourceSet;
